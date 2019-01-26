@@ -1,0 +1,422 @@
+<!-- VMware Normal.asp file for "normal" conversions (chapters from FrameMaker) -->
+
+<!-- This file generated on: Tuesday, December 21, 2004 15:01:47 -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="all" />
+<meta name="copyright" content="VMware" />
+<meta http-equiv="content-language" content="en" />
+<meta name="description" content="VMware is the global leader in virtualization software, providing desktop and server virtualization products for virtual infrastructure solutions." />
+<meta name="keywords" content="virtualization, virtualisation, virtual machine, community source, hypervisor, workstation, esx, gsx, virtualcenter, virtual server, p2v, vmtn, converter, fusion, virtualize mac, virtual appliances, vm, vm ware, free virtualization" />
+<meta name="copyright" content="VMware, Inc. All rights reserved." />
+<meta name="robots" content="noodp" />
+
+<meta name="robots" content="index,follow" />
+
+<link rel="alternate" type="application/rss+xml" href="http://vmware.simplefeed.net/rss" />
+<link rel="shortcut icon" type="image/x-icon" href="//www.vmware.com/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/files/templates/inc/template.css" />
+<link rel="stylesheet" type="text/css" href="/files/templates/inc/fce.css" />
+<link rel="stylesheet" type="text/css" href="/files/templates/inc/techpubs.css" />
+<link rel="stylesheet" type="text/css" href="/files/templates/inc/print.css" media="print" />
+<script type="text/javascript" src="/files/templates/inc/library_framework.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<strong class="seo">VMware</strong>
+
+	<div id="content-container">
+
+	<div id="content-left">
+	
+		<div id="header">
+		</div>
+		
+		<div id="content">
+		
+	
+
+<table cellpadding="0" cellspacing="0" id="main-table">
+  <tr>
+ 
+	<td id="main-body">
+
+<h1>VMware Workstation 4.5</h1>
+<p><a href="/products/desktop/ws_features.html">Features</a> | <a href="/support/pubs/ws_pubs.html">Documentation</a> | <a href="http://www.vmware.com/support/kb/enduser/std_alp.php?p_sid=xux41Wqh&p_lva=&p_li=&p_page=1&p_prod_lvl1=31&p_prod_lvl2=%7Eany%7E&p_cat_lvl1=%7Eany%7E&p_cat_lvl2=%7Eany%7E&p_search_text=&p_new_search=1&p_search_type=7&p_sort_by=dflt">Knowledge Base</a> | <a href="http://www.vmware.com/community/forum.jspa?forumID=19" target="blank">Discussion Forums</a>
+</p>
+<p></p>
+
+
+<!-- Navigation to Previous, Contents, Last, and Next pages -->
+<!-- See also Normal.asp -->
+
+<span class="smaller">
+  <p><b><a 
+  href="disks_vdiskmanager_ws.html"><img 
+  src="/support/img/goleft_10.gif" width=10 height=10 
+  alt="previous" border="0"></a>&nbsp;<a 
+  href="disks_vdiskmanager_ws.html">Prev</a>&nbsp; 
+  &nbsp;<a 
+  href="index.html">Contents</a>&nbsp;  
+  &nbsp;<a 
+  href="ws40_glossary.html">Last</a>&nbsp;  
+  &nbsp;<a 
+  href="disks_vdiskmanager_shrink_ws.html">Next</a>&nbsp;<a
+  href="disks_vdiskmanager_shrink_ws.html"><img 
+  src="/support/img/goright_10.gif" width=10 height=10 alt="next" 
+  border="0"></a></b></p></span><title>
+Running the VMware Virtual Disk Manager Utility
+
+</title>
+<p></p>
+<span class="mediumb">
+<a name="1057509"> </a>
+Running the VMware Virtual Disk Manager Utility
+
+</span>
+<span class="smaller">
+<p></p>
+<p>
+To run the VMware Virtual Disk Manager utility, open a command prompt or terminal on the host operating system. On a Windows host, change to the directory where you installed your Workstation software. By default, this directory is <tt>C:\Program Files\VMware\VMware Workstation</tt>.
+</p><p>
+The command syntax is:
+</p><p>
+<tt>vmware-vdiskmanager [options]
+ </tt>
+</p><p>
+The options you can or must use include the following:
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <caption></caption>
+  <tr bgcolor="#CCCCCC">
+    <th><div style="font-size: 9pt"><b>&nbsp;Options/Parameters
+
+</b></div>
+</th>
+    <th><div style="font-size: 9pt"><b>&nbsp;Description
+
+</b></div>
+</th>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;&lt;diskname&gt;
+</div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;The name of the virtual disk file. The virtual disk file must have a <tt>.vmdk</tt> 
+extension.
+</div>
+<div style="font-size: 9pt">&nbsp;You can specify a path to the folder where you want to store the disk files. 
+If you mapped a network share on your host operating system, you can 
+create the virtual disk on that share by providing the correct path 
+information with the disk file name.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-c
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Creates the virtual disk. You must use the <tt>-a</tt>, <tt>-s</tt> and <tt>-t</tt> options, and you 
+must specify the name of the virtual disk (<tt>&lt;diskname&gt;</tt>).
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-r 
+&lt;sourcediskname&gt;
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Converts the specified virtual disk, creating a new virtual disk as a result. 
+You must use the <tt>-t</tt> option to specify the disk type to which the virtual 
+disk is converted and you must specify the name of the target virtual disk 
+(<tt>&lt;targetdiskname&gt;</tt>). 
+</div>
+<div style="font-size: 9pt">&nbsp;Once the conversion is completed and you have tested the converted 
+virtual disk to make sure it works as expected, you can delete the original 
+virtual disk file.
+</div>
+<div style="font-size: 9pt">&nbsp;In order for the virtual machine to recognize the converted virtual disk, 
+you should use the virtual machine settings editor to remove the existing 
+virtual disk from the virtual machine, then add the converted disk to the 
+virtual machine. For information on adding virtual disks to a virtual 
+machine, see <a href="disks_add_ws.html#1046293">Adding Drives to a Virtual Machine</a>.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-x &lt;n&gt;[GB|MB] 
+&lt;diskname&gt;
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Expands the virtual disk to the specified capacity. You must specify the 
+new, larger size of the virtual disk in gigabytes or megabytes. You cannot 
+change the size of a physical (raw) disk.
+</div>
+<div style="font-size: 9pt">&nbsp;<b>Caution:</b> Before running the virtual disk manager utility, you should back 
+up your virtual disk files.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-n 
+&lt;sourcediskname&gt; 
+&lt;targetdiskname&gt;
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Renames the virtual disk specified by <tt>&lt;sourcediskname&gt;</tt>. You must 
+specify the name of the target virtual disk (<tt>&lt;targetdiskname&gt;</tt>). By 
+providing directory paths, you can rename the disk and place it in a 
+different directory or place the disk with the same name in a different 
+directory.
+</div>
+<div style="font-size: 9pt">&nbsp;Before you rename the virtual disk or change the directory in which it is 
+located, you should remove the virtual disk from any virtual machine that 
+contains the disk. Choose <b>VM</b> &gt; <b>Settings</b> &gt; <b>&lt;virtualdisk&gt;</b>, then click 
+<b>Remove</b>. 
+</div>
+<div style="font-size: 9pt">&nbsp;After you rename or relocate the virtual disk, add it back to any virtual 
+machines that use it. Choose <b>VM</b> &gt; <b>Settings</b>, click <b>Add</b>, then follow the 
+wizard to add this existing virtual disk.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-d &lt;diskname&gt;
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Defragments the specified virtual disk. You can defragment only growable 
+virtual disks. You cannot defragment preallocated virtual disks.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;-p &lt;mountpoint&gt;
+</div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Prepares a virtual disk for shrinking. If the virtual disk is partitioned into 
+volumes, each volume must be prepared separately. The volume (C: or D:, 
+for example) must be mounted by VMware DiskMount at 
+<tt>&lt;mountpoint&gt;</tt>. After you prepare the volume, unmount it with 
+VMware DiskMount. Continue mounting each volume of the virtual disk 
+and preparing it for shrinking until you complete this process for all the 
+volumes of the virtual disk.
+</div>
+<div style="font-size: 9pt">&nbsp;You can mount only one volume of a virtual disk at a time with VMware 
+DiskMount. You can prepare volumes of virtual disks for shrinking on 
+Windows hosts only.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-k &lt;diskname&gt;
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Shrinks the specified virtual disk. You can shrink only growable virtual 
+disks. You can shrink virtual disks on Windows hosts only.
+</div>
+<div style="font-size: 9pt">&nbsp;You cannot shrink a virtual disk if the virtual machine has a snapshot. To 
+keep the virtual disk in its current state, simply remove the snapshot. To 
+discard changes made since you took the snapshot, revert to the 
+snapshot.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-a 
+[ide|buslogic|<br>
+lsilogic]
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Specifies the disk adapter type. You must specify an adapter type when 
+creating a new virtual disk. Choose one of the following types:
+</div>
+
+<li>
+ide &#0151; for an IDE adapter.
+<li>
+buslogic &#0151; for a BusLogic SCSI adapter.
+<li>
+lsilogic &#0151; for an LSI Logic SCSI adapter.</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-s &lt;n&gt;[GB|MB]
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Specifies the size of the virtual disk. Specify whether the size <tt>&lt;n&gt;</tt> is in <tt>GB</tt> 
+(gigabytes) or <tt>MB</tt> (megabytes). You must specify the size of a virtual disk 
+when you create it. 
+</div>
+<div style="font-size: 9pt">&nbsp;Even though you must specify the size of a virtual disk when you expand 
+it, you do not use the <tt>-s</tt> option.
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-t [0|1|2|3]
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;You must specify the type of virtual disk when you create a new one or 
+reconfigure an existing one. Specify one of the following disk types:
+</div>
+<div style="font-size: 9pt">&nbsp;<tt>0</tt> &#0151; to create a growable virtual disk contained in a single virtual disk file
+</div>
+<div style="font-size: 9pt">&nbsp;<tt>1</tt> &#0151; to create a growable virtual disk split into 2GB files
+</div>
+<div style="font-size: 9pt">&nbsp;<tt>2</tt> &#0151; to create a preallocated virtual disk contained in a single virtual disk 
+file
+</div>
+<div style="font-size: 9pt">&nbsp;<tt>3</tt> &#0151; to create a preallocated virtual disk split into 2GB files
+</div>
+</td>
+  </tr>
+  <tr>
+    <td><div style="font-size: 9pt">&nbsp;<tt>-q
+</tt></div>
+</td>
+    <td><div style="font-size: 9pt">&nbsp;Disables virtual disk manager logging.
+</div>
+<div style="font-size: 9pt">&nbsp;If you keep logging enabled, messages generated by the virtual disk 
+manager are stored in a log file. The name and location of the log file 
+appear in the command prompt or terminal window after the virtual disk 
+manager command is run.
+</div>
+</td>
+  </tr>
+</table>
+
+
+
+
+</p>
+
+<!-- End of stuff generated by WebWorks. The rest is VMware-custom -->
+
+
+<!-- Navigation to Previous, Intro, Last, and Next pages -->
+<!-- See also "Title" and "NewHTMLPage" styles in WebWorks -->
+<!-- style designer for this same code snipped -->
+
+<span class="smaller">
+  <p><b><a 
+  href="disks_vdiskmanager_ws.html"><img 
+  src="/support/img/goleft_10.gif" width=10 height=10 
+  alt="previous" border="0"></a>&nbsp;<a 
+  href="disks_vdiskmanager_ws.html">Prev</a>&nbsp; 
+  &nbsp;<a 
+  href="index.html">Contents</a>&nbsp;  
+  &nbsp;<a 
+  href="ws40_glossary.html">Last</a>&nbsp;  
+  &nbsp;<a 
+  href="disks_vdiskmanager_shrink_ws.html">Next</a>&nbsp;<a
+  href="disks_vdiskmanager_shrink_ws.html"><img 
+  src="/support/img/goright_10.gif" width=10 height=10 alt="next" 
+  border="0"></a></b></p></span>
+
+<!-- End of whole-page span -->
+</span>
+
+		</td>
+	
+  </tr>
+  <tr>
+   </tr>
+</table>				
+			</div>
+
+			<div id="ibreadcrumbs">
+				<a href="/support/">Support</a> > <a href="/support/resources/">Support Resources</a> > <a href="/support/pubs/">Documentation</a>
+
+			</div>
+
+		</div>
+
+		<div id="content-right">
+			
+				<ul id="secondary-navigation">
+	<h3><a href="/support/resources/"><span class="bg"><span>Support Resources</span></span></a></h3>
+	<ul>
+		<li class="first"><a href="http://kb.vmware.com/"><span class="bg"><span>Knowledge Base</span></span></a></li>
+		<li><a href="/support/tools/"><span class="bg"><span>Support Tools</span></span></a></li>
+		<li><a href="/security/"><span class="bg"><span>Security Center</span></span></a></li>
+		<li><a href="/support/pubs/"><span class="bg"><span>Documentation</span></span></a>
+		<ul>
+			<li><a href="/support/pubs/vsphere-esxi-vcenter-server-pubs.html">VMware vSphere 5</a></li>
+			<li><a href="/support/pubs/vs_pubs.html">VMware vSphere 4</a></li>
+			<li><a href="/support/pubs/sdk_pubs.html">VMware SDK &amp; API</a></li>
+			<li><a href="/support/pubs/vcd_pubs.html">VMware vCloud Director</a></li>
+			<li><a href="/support/pubs/vshield_pubs.html">VMware vCloud Networking &amp; Security</a></li>
+			<li><a href="/support/pubs/vfabric-pubs.html">vFabric Suite</a></li>
+			<li><a href="/support/pubs/vfabric-data-director-pubs.html">vFabric Data Director</a></li>
+                  <li><a href="/support/pubs/appdirector-pubs.html">vFabric Application Director</a></li>
+                  <li><a href="/support/pubs/appinsight_pubs.html">vFabric AppInsight</a></li>
+                  <li><a href="/support/pubs/vcops-pubs.html">vCenter Operations Manager</a></li>
+                  <li><a href="/support/pubs/view_pubs.html">VMware View</a></li>
+                  <li><a href="/support/pubs/vcops-view-pubs.html">vCenter Operations Manager for View</a></li>
+
+			<li><a href="/support/pubs/vcenter-infrastructure-navigator-pubs.html">vCenter Infrastructure Navigator</a></li>
+			<li><a href="/support/pubs/vcm_pubs.html">vCenter Configuration Manager</a></li>
+			<li><a href="/support/pubs/srm_pubs.html">vCenter Site Recovery Manager</a></li>
+			<li><a href="/support/pubs/vdr_pubs.html">VMware vSphere Data Protection</a></li>
+			<li><a href="/support/pubs/heartbeat_pubs.html">vCenter Server Heartbeat</a></li>
+			<li><a href="/support/pubs/labmanager_pubs.html">vCenter Lab Manager</a></li>
+			<li><a href="/support/pubs/converter_pubs.html">vCenter Converter Standalone</a></li>
+			<li><a href="/support/pubs/adm_pubs.html">vCenter Application Discovery Manager</a></li>
+			<li><a href="/support/pubs/vcbm_pubs.html">vCenter Chargeback</a></li>
+			
+
+			<li><a href="/support/pubs/thinapp_pubs.html">VMware ThinApp</a></li>
+			<li class="active"><a href="/support/pubs/ws_pubs.html">VMware Workstation</a></li>
+			<li><a href="/support/pubs/player_pubs.html">VMware Player</a></li>
+			<li><a href="/support/pubs/horizon_pubs.html">VMware Horizon Application Manager</a></li>
+			<li><a href="/support/pubs/fusion_pubs.html">VMware Fusion (for the Mac)</a></li>
+		</ul></li>
+		<li><a href="http://communities.vmware.com/"><span class="bg"><span>Communities</span></span></a></li>
+		<li><a href="/support/licensing.html"><span class="bg"><span>Product Licensing</span></span></a></li>
+	</ul>
+</ul>
+
+				
+		</div>
+
+	</div>
+
+	<div id="top-of-page">  
+		<div id="iglobal-sites"></div>
+		<div id="iprimary-navigation"></div>
+		<div id="isite-tools"></div>
+		<div id="ilanguage"></div>
+		<div id="isearch-form"></div>
+	</div>
+
+	<div id="ifooter">
+	</div>
+	
+</div>
+
+<div id="custom-extras"></div>
+
+<script src="/app/template/?set=support" type="text/javascript"></script>
+
+<script type="text/javascript" src="/files/templates/inc/tracking.js"></script>
+<script type="text/javascript" src="/files/elqNow/elqCfg.js"></script>
+<script type="text/javascript" src="/files/elqNow/elqImg.js"></script>
+<script type="text/javascript" src="/files/templates/inc/s_code.js"></script>
+<script type="text/javascript" src="/files/templates/inc/s_config.js"></script>
+<script type="text/javascript" src="/files/include/module/brightedge.js"></script>
+
+
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
